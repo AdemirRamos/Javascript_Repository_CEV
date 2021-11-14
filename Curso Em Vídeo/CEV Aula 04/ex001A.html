@@ -7,40 +7,111 @@
     <title>Treinando Mais Um Pocuo</title>
 
 <style>
-    body
-    {background-color: rgb(121, 204, 207);
-    color:rgb(131, 43, 60);
-    font: normal 22pt Arial;}
-    h1 {color:darkmagenta}
 
+    body {
+        background-color: rgb(121, 204, 207);
+        color:rgb(131, 43, 60);
+        font: normal 22pt Arial;
+    }
+
+    h1 {
+        color:darkmagenta;
+    }
+    
 </style>
+
 </head>
 
 <body>
+
     <h1>Olá, Mundo!</h1>
     <p>Está tudo bem com você?</p>
+
     <script>
 
     window.alert('Minha primeira mensagem é:')
     alert('Está gostando do JS?')
     //No caso do "alert", ele pode aparecer tanto acompanhado de "window." ou somente "alert" (avulso).
 
-    window.prompt('Qual é o seu nome?')
+    window.prompt('Qual é o seu nome?', 'Digite o seu nome aqui.')
     //Faz aparecer uma "caixa" contendo a mensagem (e entre parênteses um espaço para digitação").
+
+    /*Para se colocar uma mensagem dentro da barra de digitação do "prompt", basta se adicionar uma vírgula (dentro dos parênteses), abrir aspas novamente e digitar a mensagem. Dessa forma, essa mensagem aparecerá dentro da barra de digitação do "prompt".*/
     
     window.confirm('Você quer digitar alguma coisa?')
     /*Com o "window.confirm" irá aparecer uma mensagem que pode ser respondida com "ok" ou "cancel".
 
-    Comentários:
+    Mais comentários:
     
-    "head" representa o Conteúdo (que é escrito em html).
+    "head" representa o Conteúdo (que é escrito em HTML).
 
-    Mais um comentário importante: os comentários só funcionam na área do "body" - caso sejam
-    usados os comandos "barra-asterisco, asterisco-barra" ou "barra-barra".)
+    Mais um comentário importante: os comentários só funcionam na área do "body" com o comando "<!---->".
+    
+    Caso sejam usados os comandos "barra-asterisco, asterisco-barra" ou "barra-barra", o primeiro funcionará tanto em "script" quanto em "style", porém, o segundo, só funcionará em "script". 
 
     Na parte de "style", quando se for manipular o "body", se abre chaves; se coloca as mudanças dentro
     das chaves e então as fechamos. Se formos alterar o "h1", fazemos a mesma coisa: abrimos e fechamos
     chaves (com todas as mudanças dentro delas).*/
+
+    /*Os elementos mudados da maneira acima, são chamados de seletores. As mudanças são chamadas de "declarações".*/
+
+    /*"=": recebe; "==": igual.*/
+
+    /*var carro = null: significa que a variável vai estar nula, ou seja, ela não vai armazenar nada.*/
+
+    /*Variáveis são espaços na memória do computador.*/
+
+    /*Diferença entre "let" e "var": 'var' é uma variável de escopo global (vai valer para o documento inteiro); 'let' é uma variável local (só valerá para o local onde foi utilizada).*/
+
+    /*"" e '': não há diferença entre usar uma ou a outra (com variáveis); ``: permite o uso de "place holders" (as "f strings" do JS).*/
+
+    /*O nome da variável se chama "identificador".*/
+
+    /*Regras para identificadores:*/
+
+    /*1ª: Podem começar com letras, $ ou _;*/
+    /*2ª: Não podem começar com números;*/
+    /*3ª: É possível usar números e/ou letras (números só não podem ir no começo do identificador);*/
+    /*4ª: É possível usar acentos e símbolos;*/
+    /*5ª: Não podem conter espaços (porém podemos usar "_" ou '-' nos identificadores. Por exemplo: "var cor_azul");*/
+    /*6ª: Não podem ser palavras reservadas (palavras que o JS usa como comandos). Por exemplo: "function", "alert" e assim por diante.*/
+
+    /*Para fechar o NodeJS, uma das opções é digitar ".exit".*/
+
+    /*console.log('Ademir'): é o "document.write" do terminal (dentro do VSCode).*/
+
+    /*Dentro do VSCode, ao abrir o terminal, digite "node" para abrir e usar o NodeJS dentro do terminal do VSCode.*/
+
+    /*Dentro do terminal, o comando ".exit" apenas fechará o NodeJS mas não o terminal do VSCode.*/
+
+    /*Para sair do terminal do VSCode, digite (dentro do terminal) "exit" ou clique no X para fechar a janela do terminal.*/
+
+    /*O comando "control + l" limpa o terminal (do VSCode).*/
+
+    /*Tipos Primitivos (primordiais):*/
+
+    /*5, 18, -12, 0.5, -15.9, 3.14, 8.0: Em JS, todos esses números são pertencentes ao tipo primitivo "number".*/
+    /*"Google", 'Javascript', `Maria`, "Oi1", 'Oi2', `Oi3`, "1", "2", `3`: tipo primitivo "string" (cadeia de caracteres).*/
+    /*true e false: tipo primitivo "boolean" ('booleano').*/
+
+    /*Outros Tipos Primitivos (Data Types):*/
+
+    /*- Em "number": 'infinity', 'NaN';*/
+    /*- "Null" e "undefined";*/
+    /*- "Object" (Em JS, o "null" também podem ser considerado do tipo primitivo "object").*/
+    /*- Em "object": 'array' (vetor);*/
+    /*- "Function".*/
+
+    /*O comando "typeof" nos diz o tipo primitivo de alguma linha de comando.*/
+    /*Seta para cima e para baixo (no NodeJS) volta os comandos.*/
+    
+    /*Em JS, qualquer coisa entre [] ou {} é um objeto.*/
+    /*Para reforçar: "NaN" e "infinity" são do tipo primitivo "number".*/
+    
+    /*JS é uma linguagem orientada a objeto. JS também funciona com o "paradigma funcional".*/
+
     </script>
+
 </body>
+
 </html>
