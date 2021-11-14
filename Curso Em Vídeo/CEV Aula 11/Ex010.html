@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+
+    <h1>Sistema de Multas</h1>
+    velocidade do carro <input type="number" name="txtvel" id="txtvel"> km/h
+    <input type="button" value="verificar" onclick = 'calcular()'>
+    
+    <div id='resultado'>
+
+
+    </div>
+
+    <script>
+
+    /*O "input number", habilita a possibilidade de se digitar números. Já o "input button" possibilita a abertura de caixas onde esses números serão digitados.*/
+
+    function calcular()
+    {var txtv = window.document.getElementById('txtvel')
+    var resultado = window.document.querySelector('divresultado')
+    var vel = Number(txtv.value)
+    resultado.InnerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h.</strong></p>`
+    if (vel > 60) {resultado.InnerHTML ='<p>Você está <strong>multado</strong> por execesso de velocidade!</p>'}
+    resultado.InnerHTML += '<p>Dirija sempre com cinto de segurança.</p>'}
+
+    //Sigo com os mesmo problemas de antes: as linhas de código acima simplesmente não funcionam.
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Projeto!</title>
+</head>
+<style>
+    body {background-color: rgb(48, 48, 163);
+    color:cornsilk;
+    font: normal 25pt Arial;}
+    h1 {color:rgb(189, 153, 62)}
+</style>
+<body>
+  <h1>Olá, Mundo!</h1>
+  <p>Me livrei da maldição!</p>
+  <script>
+    var n1 = Number(window.prompt('Digite algum número: '))
+    var n2 = Number(window.prompt('Digite outro número: '))
+    var s = n1 + n2
+    window.alert('A soma entre os dois valores digitados é igual a: ' + s + '.')
+    /*Assim como no Python, as variáveis, para serem entendidas como números (e não como "strings"),
+    precisam ter o seu tipo primitivo alterado. No JS, usamos os seguintes comando:
+    
+    - para números inteiros: Number.parseInt(n) ou parseInt(n)
+    - para números reais (flutuantes): Number.parseFloat(n) ou parseFloat(n)
+
+    Exemplos: var n1 = Number.parseInt(window.prompt('Digite um número: '))
+              var n1 = parseInt(window.prompt('Digite um número: '))
+
+    Caso você precise de um número real (float/flutuante)
+    basta usar Number.parseFloat (n) ou parseFloat (n).
+
+    Comentário extra: No JS moderno, se pode usar somente "Number(n)" (independente do tipo de número).
+    Exemplo: var n1 = Number(window.prompt('Digite um número: '))
+
+    Caso se deseje fazer uma conversão "number to string", se usa os seguintes comandos:
+
+    - window.alert('A soma dos valores é: ' + String(s))
+    - window.alert('A soma dos valores é: ' + n.toString())
+
+    Outro jeito mais fácil para se escrever a soma dos númerous (ou outros códigos do tipo) é usar o
+    "template string". Exemplo: window.alert(`A soma entre ${n1} + ${n2} é igual a: ${s}`)*/
+  </script>
+</body>
+</html>
