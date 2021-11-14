@@ -11,12 +11,14 @@
     body {
       background-color: rgb(48, 48, 163);
       color: cornsilk;
-      font: normal 25pt Arial;
+      font: normal 20pt Arial;
     }
 
     h1 {
       color:rgb(189, 153, 62)
     }
+
+    /*Em CSS, todo final de marcação leva ponto e vírgula (;).*/
 
   </style>
 
@@ -24,16 +26,23 @@
 
 <body>
 
-  <h1>Olá, Mundo!</h1>
+  <h1>Olá, Mundo!</h1> <!--h1: Título de nível 1.-->
   <p>Me livrei da maldição!</p>
 
-  <script>
+  <script> /*A vantagem de se posicionar o "script" aqui é: os "scripts" só serão carregados após o carregamento do código-base.*/
 
-    window.alert('Minha primeira mensagem.')
-    window.alert('Está gostando de JS?')
+    window.alert('Minha primeira mensagem.') /*Em "alert" só aparecerá a opção "ok".*/
+    alert('Está gostando de JS?')
+    window.confirm('Como você se sente ao rever tudo isso?') /*Na caixa de "confirm", vão aparecer duas opções: "ok", "cancelar".*/
     window.prompt('Qual é o seu nome?')
 
+    /*Antes, era necessário terminar as declarações em JS com um ponto e vírgula (;). Hoje, isso já não é mais necessário.*/
+    /*Entretanto, ponto e vírgula pode continuar sendo usado.*/
+    /*"alert" não precisa ser precedido por "window.", ele pode aparecer avulso.*/
+
   </script>
+
+  <!--A área do "head" é direcionada às configurações; a parte do "body" é direcionada ao conteúdo.-->
 
 </body>
 
