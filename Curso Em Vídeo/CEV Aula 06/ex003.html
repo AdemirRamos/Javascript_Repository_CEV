@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Primeiro Programa</title>
+  <title>Meu Terceiro Programa</title>
 
   <style>
 
@@ -29,10 +29,47 @@
 
   <script>
 
-    var n1 = Number(window.prompt('Digite algum número: '))
-    var n2 = Number(window.prompt('Digite outro número: '))
+    var n1 = Number.parseInt(window.prompt('Digite algum número: '))
+    var n2 = parseInt(window.prompt('Digite outro número: '))
     var s = n1 + n2
-    window.alert(`A some entre ${n1} + ${n2} é igual a: ${s}.`)
+    window.alert(`A some entre ${n1} + ${n2} é igual a ${s}.`)
+
+    var n3 = Number.parseFloat(window.prompt('Digite mais um número (dessa vez inteiro):'))
+    var n4 = parseFloat(window.prompt('Digite mais um número (também inteiro):'))
+    var s2 = n3 + n4
+    alert(`A soma entre ${n3} + ${n4} é igual a ${s2}.`)
+
+    var n5 = Number(window.prompt('Digite outro número (seja real ou inteiro):'))
+    var n6 = Number(window.prompt('Digite um último número (seja real ou inteiro):'))
+    var s3 = n5 + n6
+    window.alert(`A soma entre ${n5} + ${n6} é igual a ${s3}.`)
+
+    /*O comando "window.prompt" sempre retorna uma "string", por isso é preciso usar o operador "Number".*/
+    /*"Number" transforma os valores digitados em números (não em "strings") reais e/ou inteiros.*/
+    
+    /*Essa conversão (de "string" para número) pode ser feita das seguintes maneiras:*/
+
+    /*Number.parseInt(número) - "Number." pode ser omitido desse comando;*/
+    /*Caso se deseja um número inteiro ("float" ou ponto flutuante), usamos o operador Number.parseFloat(número);*/
+    //"Float": 'floating point'.
+
+    /*JS é uma linguagem "case sensitive", ou seja, há diferença entre usar maiúsculas e minúsculas.*/
+
+    /*Os comandos acima também funcionam de maneira simplificada. Para isso, basta usar "Number(número)".*/
+
+    /*Conversão de número para "string":*/
+
+    /*String(número);*/
+    /*número.toString().*/
+    
+    s3.toString //O nome que se dá a esse tipo de "string" é "template strings".
+    String(s2) /*O $ é chamado de "place holder".*/
+
+    document.write(`${s2} e ${s3}.`)
+
+    s1.length //Esse comando diz quantos caracteres uma "string" possui.
+    s2.toUpperCase() //Torna a "string" completamente maiúscula.
+    s3.toLowerCase() //Torna a "string" completamente minúscula.
 
   </script>
 
