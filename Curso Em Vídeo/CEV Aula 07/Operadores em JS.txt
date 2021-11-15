@@ -1,0 +1,56 @@
+Operadores em Javascript:
+
+- "typeof" também é um operador do JS.
+
+Operadores que serão estudados:
+
+- aritmético;
+- atribuição;
+- relacionais;
+- lógicos;
+- ternário.
+
+Existem outros operadores, mas somente esses serão abordados.
+
+Opedaroes Aritméticos: "+", "-", "*", "/", "%", "**".
+
+Os "operando" são os elementos que fazem os "operadores" funcionarem.
+
+*Divisão inteira é um tipo de divisão na qual não se usa vírgula.
+
+*O operador "**" (potência) é recente, passando a integrar o JS nas últimas versões do ECMA Script.
+
+Precedência de Operadores:
+
+(5 + 3) / 2 -> Se usa parênteses para determinar quais cálculos serão feitos primeiro. A isso se dá o nome "ordem de precedência".
+
+P. S.: Sem os parênteses, a divisão será feita primeiro.
+
+Ordem de Precedência em Javascript (essa ordem vale para todas as outras linguagens de programação):
+
+1ª: () [Parênteses]; 2ª: ** (Potência); 3ª: * (Multiplicação), / (Divisão) e % (Resto da Divisão); 4ª: + (Adição) e - (Subtração).
+
+P. S.: No caso dos terceiros e quartos operadores aritméticos, a ordem na qual eles aparecem é a ordem na qual eles serão resolvidos.
+
+Atribuição Simples:
+
+var a = 5 + 3 -> a == 8.
+var b = a % 5 -> b == 3.
+var c = 5 * b ** 2-> c == 45.
+var d = 10 - a / 2 -> d == 6.
+var e = 6 * 2 / d -> e == 2.
+var f = b % e + 4 / e -> f == 3.
+
+Autoatribuições (Atribuições à Própria Variável):
+
+var n = 3
+n = n + 4 ou n+= 4
+n = n - 5 ou n-= 5
+n = n * 4 ou n*= 4
+n = n / 2 ou n/= 2
+n = n ** 2 ou n**= 2
+n = n % 5 ou n%= 5
+
+valor de n = 1.
+
+P. S.: Depois de "ou", temos a simplificação do comando. Essa simplificação só vale funcionará se a variável receber o seu próprio valor.
