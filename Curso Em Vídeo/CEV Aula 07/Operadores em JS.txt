@@ -51,6 +51,22 @@ n = n / 2 ou n/= 2
 n = n ** 2 ou n**= 2
 n = n % 5 ou n%= 5
 
-valor de n = 1.
+Valor de n = 1.
 
 P. S.: Depois de "ou", temos a simplificação do comando. Essa simplificação só vale funcionará se a variável receber o seu próprio valor.
+
+Exemplo: var num = 8; num+= 8 == 10; num%= 2 == 0; var num = 3; num**= 2 == 9.
+
+Operadores de Incremento:
+
+var x = 5
+x = x + 1 ou x++
+x = x - 1 ou x--
+
+Valor de x = 5.
+
+Exemplo: var n = 10; n++ == 11; n-- == 10.
+
+Caso o incremento venha antes da variável, o valor da variável será apresentado já com o seu incremento.
+
+Exemplo: var n = 10; ++n == 11; --n == 10.
