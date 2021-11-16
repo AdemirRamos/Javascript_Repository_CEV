@@ -1,0 +1,61 @@
+Operadores Relacionais:
+
+< (Menor) / > (Maior) / >= (Maior ou Igual / <= (Menor ou Igual) / == (Igual) / != (Diferente)
+
+Toda expressão que tenha um operador relacional ligada a ela, o resultado dessa expressão vai ser sempre um valor "booleano" ("true" / "false").
+
+Operadores Relacionais de Identidade:
+
+Exemplo: 5 == '5' -> true. No JS, o sinal de igualdade não leva em consideração o tipo do elemento.
+
+Operador de Identidade (Operador de Igualdade Restrita): "===".
+
+Exemplo: 5 === '5' -> Os dois cinco são idênticos? Isso é, possuem o mesmo valor e tipo? Resposta: false.
+
+Operadores Lógicos:
+
+! (Negação / Não) / && (E / Conjunção) / || (OU / Disjunção)
+
+! é tratado como "operador unário", isso é, só possui um operando.
+
+&& e || são "operadores binários" (possuem dois operandos).
+
+Exemplos com &&:
+
+true	&&	true	-> true.
+true	&&	false	-> false.
+false	&&	true	-> false.
+false	&&	false	-> false.
+
+*Só se é satisfeito caso os dois operandos sejam verdadeiros.
+
+Exemplos com ||:
+
+true	||	true	-> true.
+true	||	false	-> true.
+false	||	true	-> true.
+false	||	false	-> false.
+
+*Na disjunção, basta que um dos operando seja verdadeiro para que o resultado seja "true".
+
+Caso tenhamos operadores lógicos e aritméticos em uma mesma expressão, primeiro serão feito os aritméticos (na ordem de precedência), depois o racionais e lógicos.
+
+Exemplo: var = 5 / var b = 8 | a > b && b % 2 == 0. Resposta: b % 2 == 0, "true"; a (5) > b (8), "false"; resultado da expressão: "false".
+
+Exemplo 2: a <= b || b / 2 == 2. Resposta: b / 2 == 2, "false"; a (5) <= b (8), "true"; resultado da expressão: "true".
+
+Caso, em uma mesma expressão, tenhamos o &&, || e !, a ordem de execução será essa: 1ª: !; 2ª: &&; 3ª: ||.
+
+Ordem de Precedência dos Operadores:
+
+1ª: aritméticos [(), **, /, et cetera]; 2ª: relacionais [<, >, >=, et cetera]; 3ª: lógicos (em ordem de precedência) [!, &&, ||]. 
+
+*Os operadores relacionais não possuem ordem de precedência, portanto, serão resolvido nas ordem em que aparecerem.
+
+Operador Ternário:
+
+? e :.
+
+Exemplo (genérico): teste ? true : false | Exemplo (concreto): média >= 7.0 ? "Aprovado" : "Reprovado".
+
+Em uma expressão, o operador ternário será sempre o último a ser feito.
