@@ -5,55 +5,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros Passos Com DOM</title>
-<style>
 
-body
-{background-color: blueviolet;
-color:cornsilk;
-font: 20 normal Arial;}
+    <style>
 
-</style>
+        body {
+            background-color: blueviolet;
+            color:cornsilk;
+            font: 20 normal Arial;
+        }
+
+    </style>
+
 </head>
+
 <body>
 
     <h1>Iniciando Estúdios Com DOM</h1>
     <p>Aqui vai o resultado.</p>
-    <p>Aprendendo a usar o DOM<strong> em Java Script</strong></p>
-    <div name = "msg">Clique em mim.</div>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Java Script.</p>
+    <div id = "mensagem">Clique em mim!</div><br>
+    <div name="segunda">Segunda "div".</div><br>
+    <div class="terceira">Terceira "div".</div><br>
+    <h2 id="subtítulo">Olá!</h2>
 
-<script>
+    <script>
 
-    var corpo = window.document.body
+        var corpo = window.document.body
 
-    var p1 = window.document.getElementsByTagName('p')[0]
+        /*Desse modo, atribuímos à variável corpo, o "body".*/
 
-    var e = window.document.getElementById('id')
+        var parágrafo = window.document.getElementsByTagName('p')[1]
+
+        /*Selecionando o primeiro parágrafo.*/
+
+        /*Caso eu queria alterar o parágrafo selecionada e, por conseguinte, o conteúdo escrito na tela, basta mudar o número entre chaves depois da seleção por nome de "tag".*/
+
+        window.document.write(`<br> Dentro do parágrafo, está escrito assim: "${parágrafo.innerText}". <br> <br>`)
+
+        /*"innerText" vai selecionar o texto dentro de "parágrafo" e escrevê-lo por conta do "document.write".*/
+        
+        /*Atente-se ao fato de que, antes de "innerText", temos a variável à qual foi atribuída o seleção da tag "p".*/
+
+        parágrafo.style.color = 'red'
+
+        /*Através do JS, mudamos a cor do "p1" para vermelho.*/
+
+        parágrafo.style.fontWeight = 'bold' //Essa alteração foi proposta por mim.
+
+        parágrafo.style.textShadow = '1px 1px 1px black' //Essa também foi proposta por mim.
+
+        corpo.style.background = 'blueviolet'
+
+        /*Através da variável "corpo" e da manipulação das CSS através do JS, podemos mudar a cor de "corpo".*/
+
+        document.write(`Esse é o conteúdo HTML ("innerHTML") de "p1": '${parágrafo.innerHTML}'`)
+
+        /*O comando, acima, faz com que todo o conteúdo HTML da "tag" selecionada seja incorporado ao que vai ser escrito na tela.*/
+
+        /*Através do comando acima, até o "strong" dentro da "p" selecionada foi incorporado à mensagem escrita na tela.*/
+
+        /*O comando acima também pode ser tornado um "alert('')".*/
+
+        var div = window.document.getElementById('mensagem')
+
+        /*Selecionamos a "div" identificada pelo "id" 'mensagem'.*/
+
+        div.style.background = 'green'
+
+        /*Com a "tag div (mensagem)" selecionada, podemos alterá-la através do JS.*/
+
+        div.innerText = 'Antes estava escrito "Clique em mim!". Agora, está escrito "Olá, Mundo!".'
+
+        div.style.textShadow = '1px 1px 1px black' //Outra alteração promovida por mim.
+
+        div.style.padding = '5px' //Outra alteração promovida por mim.
+
+        //div.innerText = 'Estou aguardando...'
+
+        //window.document.getElementById('mensagem').innerText = 'Olá'
+
+        /*Detalhe importante: não é preciso colocar "div" antes de "innerText".*/
+
+        /*Também é possível escrever o comando por completo (como no exemplo acima).*/
+        
+        var div_2 = window.document.getElementsByName('segunda')[0]
+
+        /*É preciso se usar as chaves (especificando um elemento) pois estamos selecionando elementos pelo nome.*/
+
+        /*Para as alterações funcionarem, é preciso colocar 0 entre chaves. 0 pois, dentro dos elementos da "tag div", só há um elemento selecionado por nome. O outro está sendo selecionado por "id".*/
+
+        div_2.innerText = `Antes, estava escrito "Segunda 'div'". Agora, no seu lugar, está esta mensagem.`
+        
+        div_2.style.background = 'green' //Minha alteração.
+
+        div_2.style.textShadow = '1px 1px 1px black' //Minha alteração.
+
+        div_2.style.padding = '5px' //Minha alteração.
+
+        var div_3 = document.getElementsByClassName('terceira')[0]
+
+        /*O mesmo caso de antes: essa seleção funciona por elementos, então, é preciso se dar o número do elemento que está sendo selecionado através dessa seleção.*/
+
+        div_3.innerText = 'Antes estava escrito "Terceira div". Agora, no seu lugar, temos está mensagem.'
+
+        div_3.style.background = 'green'
+
+        div_3.style.padding = '5px'
+
+        div_3.style.textShadow = '1px 1px 1px black'
+
+        /*A mais nova maneira de se selecionar elementos no JS (maneira recomendada por manuais):*/
+
+        /*O elemento a ser selecionado, precisa de uma "id".*/
+
+        var not_a_div = window.document.querySelector('h2#subtítulo')
+
+        /*Para de fato selecionar o elemento, precisamos digitar o nome do elemento, # e então a sua "id".*/
+        
+        /*Essa maneira de seleção, segue a lógica dos seletores das CSS, então, se o elemento a ser selecionado, for do tipo "class", usamos ponto (.); se for do tipo "id", usamos tralha (#).*/
+
+        not_a_div.style.background = 'green'
+
+        not_a_div.style.textShadow = '1px 1px 1px black' //Minha alteração.
+
+        not_a_div.style.padding = '5px' //Minha alteração.
+
+        not_a_div.style.color = 'red'
+
+    </script>
+
+    <!--DOM: "Document Object Model". Basicamente, um conjunto de objetos dentro do seu navegador que vão dar acesso aos componentes internos do seu "site".-->
+
+    <!--Árvore DOM: Basicamente, a Árvore DOM começa da raiz (que se chama "window").-->
+
+    <!--Tudo dentro do JS está em dentro de um objeto chamado "window".-->
+
+    <!--A janela do seu navegador é um objeto DOM chamada de "window".-->
+
+    <!--Objeto "location": diz a "url" do seu "site", localização, página atual, página anterior.-->
+
+    <!--Objeto "document": documento atual.-->
+
+    <!--Objeto "history": de onve você veio, para onde você vai (histórico).-->
+
+    <!--Dentro do "document", há o nosso HTML.-->
+
+    <!--Dentro de HTML, há dois "filhos" ('children'): "head" e "body". - HTML é "parent" de "head" e "body".-->
+
+    <!--Em "head", temos várias "tags": "meta", "title", et cetera.-->
     
-    var d = window.document.getElementsByName('name')[0]
+    <!--Dentro de "body", temos: "h1", "p", "p", "div".-->
 
-    window.document.write('Está escrito assim: ', p1.innerText)
+    <!--Dentro do segundo "p", temos "strong".-->
 
-    p1.style.color = 'red'
+    <!--"document.write" pode ser precidido (facultativamente) por "window.".-->
 
-    corpo.style.background = 'black'
+    <!--"window.document.write(window.document.charset)" nos mostra o "charset" em uso.-->
 
-    document.write(p1.innerHTML)
+    <!--"window.document.write(window.document.url)" nos mostra a nossa "url".-->
 
-    d.style.background = 'green'
+    <!--Selecionando elementos na Árvore DOM: document.getElementBy. - Ver "print" 'Árvore DOM'.-->
 
-    d.innerText = 'Estou tentando mudar...'
-    
-    window.document.getElementById('msg').innerText = 'Olá'
+    <!--Nas versões mais recentes do ECMA Script, já está disponível seleção por seletores (CSS).-->
 
-    var d = innerText = 'Olá, Mundo!'
+    <!--Também podemos selecionar por "id" (identificador) ou por "name" (nome).-->
 
-    var d = window.document.querySelector('div#msg')
-    
-    d.style.background = 'blue'
-
-    d.style.color = 'red'
-
-</script>
+    <!--Quando se tem mais de um objeto por nome ou classe, costuma se usar a seleção por nome ou marca.-->
 
 </body>
+
 </html>
