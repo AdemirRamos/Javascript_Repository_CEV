@@ -5,69 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros Passos Com DOM</title>
-<style>
 
-body
-{background-color: blueviolet;
-color:cornsilk;
-font: 20 normal Arial;}
+    <style>
 
-</style>
+        body {
+            background-color: blueviolet;
+            color:cornsilk;
+            font: 20 normal Arial;
+            text-shadow: 1px 1px 1px black;
+        }
+
+    </style>
+
 </head>
+
 <body>
 
-    <h1>Iniciando Estúdios Com DOM</h1>
+    <h1>Iniciando Estudos Com DOM</h1>
     <p>Aqui vai o resultado.</p>
     <p>Aprendendo a usar o DOM<strong> em Java Script</strong></p>
-    <div name = "msg">Clique em mim.</div>
+    <div id = "mensagem">Clique em mim.</div><br>
+    <div id="div1">Olá, mundo!</div><br>
+    <div name="div2">Olá!</div><br>
+    <div id="mensagem2">Div 2.</div><br>
 
-<script>
+    <script>
 
-    var corpo = window.document.body
-    var p1 = window.document.getElementsByTagName('p')[0]
-    var e = window.document.getElementById('id')
-    var d = window.document.getElementsByName('name')[0]
-    //É possível usar o comando acima sem o "window.".
-    //O zero (0) entre colchetes representa o primeiro parágrafo (p).
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var e = window.document.getElementById('div1')
+        var d = window.document.getElementsByName('div2')[0]
+        //É possível usar os comandos acima sem o "window.".
+        //O zero (0) entre colchetes representa o primeiro elemento do método de seleção utilizado.
 
-    window.document.write('Está escrito assim: ', p1.innerText)
-    //Reescreve o conteúdo do primeiro parágrafo.
-    //Sempre lembrando que, para concatenar, podemos usar "," ou "+".
+        window.document.write('Está escrito assim: ', p1.innerText)
+        //Reescreve o conteúdo do primeiro parágrafo.
+        //Sempre lembrando que, para concatenar, podemos usar "," ou "+".
 
-    p1.style.color = 'red'
-    //Deixa o "p1" com a cor vermelha.
+        p1.style.color = 'red'
+        //Deixa o "p1" com a cor vermelha.
 
-    corpo.style.background = 'black'
-    //Muda a cor de fundo da página.
+        p1.style.fontWeight = 'bolder'
+        p1.style.textShadow = '1px 1px 1px black'
 
-    document.write(p1.innerHTML)
-    //Nesse caso, o comando referido vem formatado (exatamente como está no local do qual foi tirado).
+        corpo.style.background = 'blueviolet'
+        //Muda a cor de fundo da página.
 
-    d.style.background = 'green'
-    //Ele não explicou direito, mas isso deveria mudar a cor da "id" - (dentro do "div").
+        document.write('<br> <br>' + p1.innerHTML)
+        //Nesse caso, o comando referido vem formatado (exatamente como está no local do qual foi tirado).
 
-    d.innerText = 'Estou tentando mudar...'
-    //Reescreve o texto da variável "d".
-    
-    window.document.getElementById('msg').innerText = 'Olá'
-    //Outro jeito de executar o comando acima (só que de maneira mais longa).
+        document.write(`<br> <br> Isto é o que está escrito dentro desta "div": '${d.innerText}'.`)
 
-    /*Também é possível usar "name" ao invés de id - mas ele não explicou de maneira satisfatória.
-    Lendo os comentários do vídeo, dá para se notar que outras pessoas também tiveram o mesmo
-    problema o que deve ser um sinal de que essa parte do curso está desatualizada. (...)
-    Além de "name", também é possível usar "class".*/
+        d.style.background = 'green'
 
-    var d = innerText = 'Olá, Mundo!'
+        d.innerText = 'Está funcionando...'
+        //Reescreve o texto da variável "d".
+        
+        window.document.getElementById('mensagem').innerText = 'Estou apenas fazendo algumas modificações.'
+        //Outro jeito de executar o comando acima (só que de maneira mais longa).
 
-    var d = window.document.querySelector('div#msg')
-    
-    d.style.background = 'blue'
+        /*Também é possível usar "name" ao invés de id e, além de "name", também é possível usar "class".*/
 
-    d.style.color = 'red'
+        document.write(`<br> <br> Este é o conteúdo da "variável e": '${e.innerHTML}'.`)
 
-    //Todos os comandos relacionados à "div" (mostrados no vídeo) estão desatualizados. Que frustrante!
-    
-</script>
+        var div2 = window.document.querySelector('div#mensagem2')
+        
+        document.write(`<br> <br> Este é o conteúdo da "variável div": '${div2.innerHTML}'.`)
+
+        div2.style.background = 'blue'
+
+        div2.style.color = 'red'
+        
+    </script>
 
 </body>
+
 </html>
