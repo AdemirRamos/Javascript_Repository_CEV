@@ -16,4 +16,5 @@ else if (idade > 18 && idade < 67) {
 else if (idade >= 67) {
     console.log('O seu voto é opcional.')
     }
-    
+
+/*"console.log()", se usado no navegador, ficará armazenado no "storage".*/
