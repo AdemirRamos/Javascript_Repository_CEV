@@ -2,8 +2,9 @@ var agora = new Date()
 var dds = agora.getDay()
 //dds == dia da semana.
 console.log(`Hoje é ${dds}.`)
-switch(dds)
-    {case 0: console.log('Domingo.')
+
+switch(dds) {
+    case 0: console.log('Domingo.')
         break
     case 1: console.log('Segunda-feira.')
         break
@@ -18,4 +19,5 @@ switch(dds)
     case 6: console.log('Sábado.')
         break
     default: console.log('Dia inexistente.')
-        break}
+        break
+}
