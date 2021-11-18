@@ -5,33 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
+
 </head>
+
 <body>
 
     <h1>Sistema de Multas</h1>
-    velocidade do carro <input type="number" name="txtvel" id="txtvel"> km/h
-    <input type="button" value="verificar" onclick = 'calcular()'>
+    Velocidade do carro <input type="number" name="txtvel" id="txtvel"> km/h
+    <input type="button" value="verificar" onclick="calcular()">
     
-    <div id='resultado'>
-
-
-    </div>
+    <div id='resultado'></div>
 
     <script>
 
-    /*O "input number", habilita a possibilidade de se digitar números. Já o "input button" possibilita a abertura de caixas onde esses números serão digitados.*/
+        /*O "input number", habilita um barra retangular na qual valores podem ser digitados. Já o "input button" cria um botão.*/
 
-    function calcular()
-    {var txtv = window.document.getElementById('txtvel')
-    var resultado = window.document.querySelector('divresultado')
-    var vel = Number(txtv.value)
-    resultado.InnerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h.</strong></p>`
-    if (vel > 60) {resultado.InnerHTML ='<p>Você está <strong>multado</strong> por execesso de velocidade!</p>'}
-    resultado.InnerHTML += '<p>Dirija sempre com cinto de segurança.</p>'}
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var resultado = window.document.querySelector('div#resultado')
+            var vel = Number(txtvel.value)
+            resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h.</strong></p>`
+            
+            if (vel > 60) {
+                resultado.innerHTML += '<p>Você está <strong>multado</strong> por execesso de velocidade!</p>'
+            }
 
-    //Sigo com os mesmo problemas de antes: as linhas de código acima simplesmente não funcionam.
-
+            resultado.innerHTML += '<p>Dirija sempre com cinto de segurança.</p>'
+        }
 
     </script>
+
+    <!--Programa sequêncial: é executado somente em uma certa ordem especificada.-->
+
+    <!--Desvio condicional: consiste em uma alteração fluxo do programa com base em determinadas escolhas feitas pelo usuário.-->
+
+    <!--JS é uma linguagem de programação imperativa - ela possui vários tipos de condições.-->
+
+    <!--Condição é uma estrutura de controle.-->
+
+    <!--Existem vários tipos de condições. Nessa aula, veremos dois tipos:-->
+
+    <!--1ª: Condição Simples: é formada somente pelo "if", a condição e o bloco de códigos.-->
+
 </body>
+
 </html>

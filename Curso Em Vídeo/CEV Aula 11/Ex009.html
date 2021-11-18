@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Ex009</title>
+
+    <style>
+
+        body {
+            background-color: rgb(80, 80, 214);
+            font-weight: bold;
+            color: cornsilk;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        input#nacionalidade {
+            background-color: rgba(255, 247, 247, 0.801);
+            border: 1px solid black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Nacionalidade</h1>
+    Digite o nome do seu país na caixa a seguir: <input type="text" name="nacionalidade" id="nacionalidade">
+    <button id="botão" onclick="verificação()">Verificar</button>
+    <div id="resultado"></div>
+
+    <script>
+
+        function verificação() {
+            var country = document.querySelector('input#nacionalidade')
+            var button =  document.querySelector('button#botão')
+            var país = (country.value)
+            resultado.innerHTML = `<br> Você está viviendo no (a/os/as) ${país}.`
+            if (país == 'Brasil') {
+                resultado.innerHTML += ' Você é brasileiro.'
+            }
+            else {
+                resultado.innerHTML += ' Você é estrangeiro.'
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
