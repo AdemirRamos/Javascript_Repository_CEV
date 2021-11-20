@@ -4,4 +4,28 @@ Funções:
 
 - "Arrow Functions";
 - "Callback";
-- 
+- Funções Anônimas;
+- IIFEs;
+- Javascript funcional.
+
+Objetos:
+
+- A Javascript, além de ser uma linguagem funcional, também um linguagem orientada a objeto.
+
+Modularização.
+
+RegEx:
+
+- Expressões regulares / validação de dados.
+
+JSON.
+
+AJAX.
+
+NodeJS.
+
+JQuery.
+
+ViewJS.
+
+Angular.
