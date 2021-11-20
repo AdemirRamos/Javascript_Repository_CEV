@@ -11,7 +11,8 @@ let resultado = par_ou_impar(4) //O número entre parênteses é chamado de "par
 //Uma opção, para não usar uma variável, seria: "console.log(parouimpar(4))."
 console.log(resultado) //Agora, após passar pela função, "resultado" tem o valor "Ímpar".
 
-//Javascript é uma linguagem de programação que funciona sob o paradigma funcional, em outras palavras, JS é uma linguagem funcional.
+//JS é uma linguagem de programação que também funciona sob o paradigma funcional, ou seja, JS também é uma linguagem funcional.
+//Porém, JS também é uma linguagem multi-paradigma.
 //Toda função pode possuir os seguintes elementos: uma chamada; um conjunto de parâmetros; uma ação; um retorno.
 //Nem toda função vai apresentar todos os elementos listados acima.
 //Funções: funções são ações executadas assim que são chamadas ou em decorrência de algum evento.
