@@ -1,12 +1,13 @@
 let num = document.querySelector('input#fnum')
 let lista = document.querySelector('select#flista')
-let res = document.querySelector('div#res')
+let resultado = document.querySelector('div#resultado')
 let valores = []
 
 function isNumero() {
     if (Number(n) >= 1 && Number(n) <= 100) {
         return true
-    } else {
+    }
+    else {
 
     }
 }
@@ -14,7 +15,8 @@ function isNumero() {
 function inLista(n, l) {
     if (l.indexOf(Number(n)) != -1) {
         return true
-    } else {
+    }
+    else {
         return false
     }
 }
