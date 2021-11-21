@@ -29,6 +29,5 @@ function contar() {
         }   res.innerHTML += `\u{1F3C1}`
     }
 
-}
-            
+}      
 //Dentro das parênteses do "get elements by id", as aspas podem ser simples ou compostas.
