@@ -1,12 +1,19 @@
-function carregar()
-{var msg = window.document.getElementById('msg')
-var ing = window.document.getElementById('imagem')
-var data = new Date()
-var hora = data.getHours()
-msg.innerHTML = `Agora são ${hora} horas.`
-if (hora >= 0 && hora < 12) {/*Bom dia!*/ img.src = 'manha.png'
-document.body.style.background = '#d87f01'}
-else if (hora >= 12 && hora < 18) {/*Boa Tarde!*/ img.src = 'tarde.png'
-document.body.style.background = '#ea761c'}
-else {/*Boa Noite!*/ img.src = 'noite.png'
-document.body.style.background = '#6f4c6d'}}
+function carregar() {
+    var mensagem = window.document.getElementById('mensagem')
+    var imagem = window.document.getElementById('imagem')
+    var data = new Date()
+    var hora = data.getHours()
+    mensagem.innerHTML = `Agora são ${hora} horas.`
+    if (hora >= 0 && hora < 12) {
+        img.src = 'morning_round.png' /*Bom dia!*/
+        document.body.style.background = '#d87f01'
+    }
+    else if (hora >= 12 && hora < 18) {
+        img.src = 'afternoon_round.png' /*Boa Tarde!*/
+        document.body.style.background = '#ea761c'
+    }
+    else {
+        img.src = 'night_round.png' /*Boa Noite!*/
+        document.body.style.background = '#6f4c6d'
+    }
+}
