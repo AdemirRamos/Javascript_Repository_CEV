@@ -1,6 +1,6 @@
 Operadores em Javascript:
 
-- "typeof" também é um operador do JS.
+- "typeOf" também é um operador do JS.
 
 Operadores que serão estudados:
 
@@ -10,7 +10,7 @@ Operadores que serão estudados:
 - lógicos;
 - ternário.
 
-Existem outros operadores, mas somente esses serão abordados.
+Existe outros operadores, mas somente esses serão abordados.
 
 Opedaroes Aritméticos: "+", "-", "*", "/", "%", "**".
 
@@ -30,7 +30,7 @@ Ordem de Precedência em Javascript (essa ordem vale para todas as outras lingua
 
 1ª: () [Parênteses]; 2ª: ** (Potência); 3ª: * (Multiplicação), / (Divisão) e % (Resto da Divisão); 4ª: + (Adição) e - (Subtração).
 
-P. S.: No caso dos terceiros e quartos operadores aritméticos, a ordem na qual eles aparecem é a ordem na qual eles serão resolvidos.
+P. S.: No caso dos terceiros e quartos operadores aritméticos, a ordem na qual eles aparecem é a ordem na qual eles serão executados.
 
 Atribuição Simples:
 
@@ -53,7 +53,7 @@ n = n % 5 ou n%= 5
 
 Valor de n = 1.
 
-P. S.: Depois de "ou", temos a simplificação do comando. Essa simplificação só vale funcionará se a variável receber o seu próprio valor.
+P. S.: Depois de "ou", temos a simplificação do comando. Essa simplificação só funcionará se a variável receber o seu próprio valor.
 
 Exemplo: var num = 8; num+= 8 == 10; num%= 2 == 0; var num = 3; num**= 2 == 9.
 
