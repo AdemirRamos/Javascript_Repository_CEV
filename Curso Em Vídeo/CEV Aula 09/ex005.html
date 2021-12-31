@@ -10,7 +10,7 @@
 
         body {
             background-color: blueviolet;
-            color:cornsilk;
+            color: cornsilk;
             font: 20 normal Arial;
         }
 
@@ -23,7 +23,7 @@
     <h1>Iniciando Estúdios Com DOM</h1>
     <p>Aqui vai o resultado.</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
-    <div id = "mensagem">Clique em mim!</div><br>
+    <div id="mensagem">Clique em mim!</div><br>
     <div name="segunda">Segunda "div".</div><br>
     <div class="terceira">Terceira "div".</div><br>
     <h2 id="subtítulo">Olá!</h2>
@@ -32,23 +32,23 @@
 
         var corpo = window.document.body
 
-        /*Desse modo, atribuímos à variável corpo, o "body".*/
+        //Desse modo, atribuímos à variável corpo, o "body".
 
         var parágrafo = window.document.getElementsByTagName('p')[1]
 
-        /*Selecionando o primeiro parágrafo.*/
+        //Selecionando o primeiro parágrafo.
 
-        /*Caso eu queria alterar o parágrafo selecionada e, por conseguinte, o conteúdo escrito na tela, basta mudar o número entre chaves depois da seleção por nome de "tag".*/
+        //Caso eu queria alterar o parágrafo selecionada e, por conseguinte, o conteúdo escrito na tela, basta mudar o número entre colchetes, depois da seleção por nome de "tag".
 
         window.document.write(`<br> Dentro do parágrafo, está escrito assim: "${parágrafo.innerText}". <br> <br>`)
 
-        /*"innerText" vai selecionar o texto dentro de "parágrafo" e escrevê-lo por conta do "document.write".*/
+        //"innerText" vai selecionar o texto dentro de "parágrafo" e escrevê-lo por conta do "document.write".
         
-        /*Atente-se ao fato de que, antes de "innerText", temos a variável à qual foi atribuída o seleção da tag "p".*/
+        //Atente-se ao fato de que, antes de "innerText", temos a variável à qual foi atribuída o seleção da tag "p".
 
         parágrafo.style.color = 'red'
 
-        /*Através do JS, mudamos a cor do "p1" para vermelho.*/
+        //Através do JS, mudamos a cor do "p1" para vermelho.
 
         parágrafo.style.fontWeight = 'bold' //Essa alteração foi proposta por mim.
 
@@ -56,23 +56,23 @@
 
         corpo.style.background = 'blueviolet'
 
-        /*Através da variável "corpo" e da manipulação das CSS através do JS, podemos mudar a cor de "corpo".*/
+        //Através da variável "corpo" e da manipulação das CSS através do JS, podemos mudar a cor de "corpo".
 
-        document.write(`Esse é o conteúdo HTML ("innerHTML") da "parágrafo": '${parágrafo.innerHTML}'`)
+        document.write(`Esse é o conteúdo HTML ("innerHTML") da "parágrafo": '${parágrafo.innerHTML}.'`)
 
-        /*O comando, acima, faz com que todo o conteúdo HTML da "tag" selecionada seja incorporado ao que vai ser escrito na tela.*/
+        //O comando, acima, faz com que todo o conteúdo HTML da "tag" selecionada seja incorporado ao que vai ser escrito na tela.
 
-        /*Através do comando acima, até o "strong" dentro da "p" selecionada foi incorporado à mensagem escrita na tela.*/
+        //Através do comando acima, até o "strong" dentro da "p" selecionada foi incorporado à nova mensagem escrita na tela.
 
-        /*O comando acima também pode ser tornado um "alert('')".*/
+        //O comando acima também pode ser tornado um "alert('')".
 
         var div = window.document.getElementById('mensagem')
 
-        /*Selecionamos a "div" identificada pelo "id" 'mensagem'.*/
+        //Selecionamos a "div" identificada pelo "id" 'mensagem'.
 
         div.style.background = 'green'
 
-        /*Com a "tag div (mensagem)" selecionada, podemos alterá-la através do JS.*/
+        //Com a "tag div (mensagem)" selecionada, podemos alterá-la através do JS.
 
         div.innerText = 'Antes estava escrito "Clique em mim!". Agora, está escrita esta mensagem.'
 
@@ -84,15 +84,15 @@
 
         //window.document.getElementById('mensagem').innerText = 'Olá'
 
-        /*Detalhe importante: não é preciso colocar "div" antes de "innerText".*/
+        //Detalhe importante: é preciso colocar "div" antes de "innerText".
 
-        /*Também é possível escrever o comando por completo (como no exemplo acima).*/
+        //Também é possível escrever o comando por completo (como no exemplo acima)
         
         var div_2 = window.document.getElementsByName('segunda')[0]
 
-        /*É preciso se usar as chaves (especificando um elemento) pois estamos selecionando elementos pelo nome.*/
+        //É preciso se usar as chaves (especificando um elemento) pois estamos selecionando elementos pelo nome.
 
-        /*Para as alterações funcionarem, é preciso colocar 0 entre chaves. 0 pois, dentro dos elementos da "tag div", só há um elemento selecionado por nome. O outro está sendo selecionado por "id".*/
+        //Para as alterações funcionarem, é preciso colocar 0 entre colchetes; 0 pois, entre os elementos da "div", só há um elemento selecionado por nome. O outro está sendo selecionado por "id".
 
         div_2.innerText = `Antes, estava escrito "Segunda 'div'". Agora, no seu lugar, está esta mensagem.`
         
@@ -104,11 +104,11 @@
 
         var div_3 = document.getElementsByClassName('terceira')[0]
 
-        /*O mesmo caso de antes: essa seleção funciona por elementos, então, é preciso se dar o número do elemento que está sendo selecionado através dessa seleção.*/
+        //O mesmo caso de antes: essa seleção funciona por elementos, então, é preciso se dar o número do elemento que está sendo selecionado através dessa seleção.
 
         div_3.innerText = `Antes estava escrito "Terceira 'div'". Agora, no seu lugar, temos esta mensagem.`
 
-        /*A vantagem de se usar a crase para escrever "strings" é que, ao fazer isso, você pode usar ambas as aspas (simples e duplas) sem problemas.*/
+        //A vantagem de se usar a crase para escrever "strings" é que, ao fazer isso, você pode usar ambas as aspas (simples e duplas) sem problemas.
 
         div_3.style.background = 'green'
 
@@ -116,15 +116,15 @@
 
         div_3.style.textShadow = '1px 1px 1px black'
 
-        /*A mais nova maneira de se selecionar elementos no JS (maneira recomendada por manuais):*/
+        //A mais nova maneira de se selecionar elementos no JS (maneira recomendada por manuais):
 
-        /*O elemento a ser selecionado, precisa de uma "id".*/
+        //O elemento a ser selecionado, precisa de um "id".
 
         var not_a_div = window.document.querySelector('h2#subtítulo')
 
-        /*Para de fato selecionar o elemento, precisamos digitar o nome do elemento, # e então a sua "id".*/
+        //Para de fato selecionar o elemento, precisamos digitar o nome do elemento, uma "#" e então a sua "id".
         
-        /*Essa maneira de seleção, segue a lógica dos seletores das CSS, então, se o elemento a ser selecionado, for do tipo "class", usamos ponto (.); se for do tipo "id", usamos tralha (#).*/
+        //Essa maneira de seleção, segue a lógica dos seletores das CSS, então, se o elemento a ser selecionado, for do tipo "class", usamos ponto (.); se for do tipo "id", usamos tralha (#).
 
         not_a_div.style.background = 'green'
 
@@ -160,13 +160,13 @@
 
     <!--Dentro do segundo "p", temos "strong".-->
 
-    <!--"document.write" pode ser precidido (facultativamente) por "window.".-->
+    <!--"document.write" pode ser precedido (facultativamente) por "window.".-->
 
     <!--"window.document.write(window.document.charset)" nos mostra o "charset" em uso.-->
 
     <!--"window.document.write(window.document.url)" nos mostra a nossa "url".-->
 
-    <!--Selecionando elementos na Árvore DOM: document.getElementBy. - Ver "print" 'Árvore DOM'.-->
+    <!--Selecionando elementos na Árvore DOM: document.getElementById. - Ver "print" 'Árvore DOM'.-->
 
     <!--Nas versões mais recentes do ECMA Script, já está disponível seleção por seletores (CSS).-->
 
