@@ -2,7 +2,7 @@ Operadores Relacionais:
 
 < (Menor) / > (Maior) / >= (Maior ou Igual / <= (Menor ou Igual) / == (Igual) / != (Diferente)
 
-Toda expressão que tenha um operador relacional ligada a ela, o resultado dessa expressão vai ser sempre um valor "booleano" ("true" / "false").
+Toda expressão que tenha um operador relacional ligada a ela, sempre terá como resultado (dessa expressão) um valor "booleano" ("true" / "false").
 
 Operadores Relacionais de Identidade:
 
@@ -10,15 +10,15 @@ Exemplo: 5 == '5' -> true. No JS, o sinal de igualdade não leva em consideraç�
 
 Operador de Identidade (Operador de Igualdade Restrita): "===".
 
-Exemplo: 5 === '5' -> Os dois cinco são idênticos? Isso é, possuem o mesmo valor e tipo? Resposta: false.
+Exemplo: 5 === '5' -> "Os dois cinco são idênticos?" Isso é, possuem o mesmo valor e tipo? Resposta: "false".
 
 Operadores Lógicos:
 
 ! (Negação / Não) / && (E / Conjunção) / || (OU / Disjunção)
 
-! é tratado como "operador unário", isso é, só possui um operando.
+"!" é tratado como "operador unário", isso é, só possui um operando.
 
-&& e || são "operadores binários" (possuem dois operandos).
+"&&" e "||" são "operadores binários" (possuem dois operandos).
 
 Exemplos com &&:
 
@@ -27,7 +27,7 @@ true	&&	false	-> false.
 false	&&	true	-> false.
 false	&&	false	-> false.
 
-*Só se é satisfeito caso os dois operandos sejam verdadeiros.
+*Esse operador só é satisfeito (apresenta o resultado "true") caso os dois operandos sejam verdadeiros.
 
 Exemplos com ||:
 
@@ -44,13 +44,13 @@ Exemplo: var = 5 / var b = 8 | a > b && b % 2 == 0. Resposta: b % 2 == 0, "true"
 
 Exemplo 2: a <= b || b / 2 == 2. Resposta: b / 2 == 2, "false"; a (5) <= b (8), "true"; resultado da expressão: "true".
 
-Caso, em uma mesma expressão, tenhamos o &&, || e !, a ordem de execução será essa: 1ª: !; 2ª: &&; 3ª: ||.
+Caso, em uma mesma expressão, tenhamos o &&, || e !, a ordem de execução será esta: 1ª: !; 2ª: &&; 3ª: ||.
 
 Ordem de Precedência dos Operadores:
 
 1ª: aritméticos [(), **, /, et cetera]; 2ª: relacionais [<, >, >=, et cetera]; 3ª: lógicos (em ordem de precedência) [!, &&, ||]. 
 
-*Os operadores relacionais não possuem ordem de precedência, portanto, serão resolvido nas ordem em que aparecerem.
+*Os operadores relacionais não possuem ordem de precedência, portanto, serão resolvidos na ordem em que aparecerem.
 
 Operador Ternário:
 
