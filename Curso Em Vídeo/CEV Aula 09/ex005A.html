@@ -10,7 +10,7 @@
 
         body {
             background-color: blueviolet;
-            color:cornsilk;
+            color: cornsilk;
             font: 20 normal Arial;
             text-shadow: 1px 1px 1px black;
         }
@@ -24,7 +24,7 @@
     <h1>Iniciando Estudos Com DOM</h1>
     <p>Aqui vai o resultado.</p>
     <p>Aprendendo a usar o DOM<strong> em Java Script</strong></p>
-    <div id = "mensagem">Clique em mim.</div><br>
+    <div id="mensagem">Clique em mim.</div><br>
     <div id="div1">Olá, mundo!</div><br>
     <div name="div2">Olá!</div><br>
     <div id="mensagem2">Div 2.</div><br>
@@ -36,7 +36,7 @@
         var e = window.document.getElementById('div1')
         var d = window.document.getElementsByName('div2')[0]
         //É possível usar os comandos acima sem o "window.".
-        //O zero (0) entre colchetes representa o primeiro elemento do método de seleção utilizado.
+        //O zero (0) entre colchetes representa o primeiro elemento (correspondente ao método de seleção utilizado).
 
         window.document.write('Está escrito assim: ', p1.innerText)
         //Reescreve o conteúdo do primeiro parágrafo.
@@ -52,7 +52,7 @@
         //Muda a cor de fundo da página.
 
         document.write('<br> <br>' + p1.innerHTML)
-        //Nesse caso, o comando referido vem formatado (exatamente como está no local do qual foi tirado).
+        //Nesse caso, o comando referido vem formatado em relação ao seu HTML original (exatamente como está no local do qual foi tirado).
 
         document.write(`<br> <br> Isto é o que está escrito dentro desta "div": '${d.innerText}'.`)
 
@@ -62,15 +62,15 @@
         //Reescreve o texto da variável "d".
         
         window.document.getElementById('mensagem').innerText = 'Estou apenas fazendo algumas modificações.'
-        //Outro jeito de executar o comando acima (só que de maneira mais longa).
+        //Outro jeito de executar o comando acima (só que de maneira mais longa - tudo na mesma linha).
 
-        /*Também é possível usar "name" ao invés de id e, além de "name", também é possível usar "class".*/
+        //Também é possível usar "name" ao invés de "id" e, além de "name", também é possível usar "class".
 
         document.write(`<br> <br> Este é o conteúdo da "variável e": '${e.innerHTML}'.`)
 
         var div2 = window.document.querySelector('div#mensagem2')
         
-        document.write(`<br> <br> Este é o conteúdo da "variável div": '${div2.innerHTML}'.`)
+        document.write(`<br> <br> Este é o conteúdo da "variável div2": '${div2.innerHTML}'.`)
 
         div2.style.background = 'blue'
 
