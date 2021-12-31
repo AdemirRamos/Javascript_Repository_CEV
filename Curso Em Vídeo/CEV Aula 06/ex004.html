@@ -25,28 +25,28 @@
    document.write(`O seu nome escrito somente com letras maiúsculas fica assim: ${nome.toUpperCase()}.<br>`)
    document.write(`O seu nome escrito somente com letras minúsculas fica assim: ${nome.toLowerCase()}.`)
    
-   /*O comando "document.writeln('string')" faz com a mensagem, contida em si, seja escrita na mesma linha.*/
+   //O comando "document.writeln('string')" faz com a mensagem, contida em si, seja escrita na mesma linha.
    
-   /*Creio que os comandos abaixo, talvez, só funcionem no NodeJS.*/
-   /*No NodeJS os comandos abaixo funcionam perfeitamente. Aqui, eles não funcionam.*/
+   //Creio que os comandos abaixo, talvez, só funcionem no NodeJS.
+   //No NodeJS os comandos abaixo funcionam perfeitamente. Aqui, eles não funcionam.
 
    var n1 = 1545.5
-   n1.toFixed(2) //Esse comando faz com o número digitado tenha duas casas decimais.
+   n1.toFixed(2) //Esse comando faz com que o número digitado tenha duas casas decimais.
    document.write(`<br> <br> ${n1}.`)
 
-   /*Para trocar o ponto pela vírgula, basta usar este comando:*/
+   //Para trocar o ponto pela vírgula, basta usar este comando:
 
    n1.toFixed(2).replace('.', ',')
    document.write(`<br> <br> ${n1}.`)
 
-   /*Para formatar um número como salário (em Reais), basta usar este comando:*/
+   //Para formatar um número como salário (em Reais), basta usar este comando:
 
    n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
    document.write(`<br> <br> ${n1}.`)
 
-   /*No campo "currency:", você pode adicionar a moeda para a qual você deseja converter o número.*/
-   /*No navegador, segundo o Guanabara, o número já aparecerá convertido e com vírgulas.*/
-   /*Mas, de toda forma, se pode usar o comando "replace()" para trocar os pontos por vírgulas.*/
+   //No campo "currency:", você pode adicionar a moeda para a qual você deseja converter o número.
+   //No navegador, segundo o Guanabara, o número já aparecerá convertido e com vírgulas.
+   //Mas, de toda forma, se pode usar o comando "replace()" para trocar os pontos por vírgulas.
 
  </script>
 
