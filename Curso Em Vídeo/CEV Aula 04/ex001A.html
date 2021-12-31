@@ -10,12 +10,12 @@
 
     body {
         background-color: rgb(121, 204, 207);
-        color:rgb(131, 43, 60);
+        color: rgb(131, 43, 60);
         font: normal 22pt Arial;
     }
 
     h1 {
-        color:darkmagenta;
+        color: darkmagenta;
     }
     
 </style>
@@ -43,72 +43,72 @@
 
     Mais comentários:
     
-    "head" representa o Conteúdo (que é escrito em HTML).
+    "head" representa o conteúdo (que é escrito em HTML).
 
-    Mais um comentário importante: os comentários só funcionam na área do "body" com o comando "<!---->".
+    Mais um comentário importante: os comentários só funcionam na área do "body" com o seguinte comando: "<!---->".
     
     Caso sejam usados os comandos "barra-asterisco, asterisco-barra" ou "barra-barra", o primeiro funcionará tanto em "script" quanto em "style", porém, o segundo, só funcionará em "script". 
 
-    Na parte de "style", quando se for manipular o "body", se abre chaves; se coloca as mudanças dentro
+    Na parte de "style", quando se for manipular o "body" (ou outro elemento da página), se adiciona o nome do elemento, se abre chaves; se coloca as mudanças dentro
     das chaves e então as fechamos. Se formos alterar o "h1", fazemos a mesma coisa: abrimos e fechamos
     chaves (com todas as mudanças dentro delas).*/
 
-    /*Os elementos mudados da maneira acima, são chamados de seletores. As mudanças são chamadas de "declarações".*/
+    //Os elementos mudados da maneira acima, são chamados de seletores. As mudanças são chamadas de "declarações".
 
-    /*"=": recebe; "==": igual.*/
+    //"=": recebe; "==": igual.
 
-    /*var carro = null: significa que a variável vai estar nula, ou seja, ela não vai armazenar nada.*/
+    //var carro = null: significa que a variável vai estar nula, ou seja, ela não vai armazenar nada.
 
-    /*Variáveis são espaços na memória do computador.*/
+    //Variáveis são espaços na memória do computador.
 
-    /*Diferença entre "let" e "var": 'var' é uma variável de escopo global (vai valer para o documento inteiro); 'let' é uma variável local (só valerá para o local onde foi utilizada).*/
+    //Diferença entre "let" e "var": 'var' é uma variável de escopo global (vai valer para o documento inteiro); 'let' é uma variável local (só valerá para o local onde foi utilizada).
 
-    /*"" e '': não há diferença entre usar uma ou a outra (com variáveis); ``: permite o uso de "place holders" (as "f strings" do JS).*/
+    //"" e '': não há diferença entre usar uma ou a outra (com variáveis); ``: permite o uso de "place holders" (as "f strings" do JS).
 
-    /*O nome da variável se chama "identificador".*/
+    //O nome da variável se chama "identificador".
 
-    /*Regras para identificadores:*/
+    //Regras para identificadores:
 
-    /*1ª: Podem começar com letras, $ ou _;*/
-    /*2ª: Não podem começar com números;*/
-    /*3ª: É possível usar números e/ou letras (números só não podem ir no começo do identificador);*/
-    /*4ª: É possível usar acentos e símbolos;*/
-    /*5ª: Não podem conter espaços (porém podemos usar "_" ou '-' nos identificadores. Por exemplo: "var cor_azul");*/
-    /*6ª: Não podem ser palavras reservadas (palavras que o JS usa como comandos). Por exemplo: "function", "alert" e assim por diante.*/
+    //1ª: Podem começar com letras, $ ou _;
+    //2ª: Não podem começar com números;
+    //3ª: É possível usar números e/ou letras (números só não podem ir no começo do identificador);
+    //4ª: É possível usar acentos e símbolos;
+    //5ª: Não podem conter espaços (porém podemos usar "_" ou '-'. Por exemplo: "var cor_azul" / "let cor-vermelha");
+    //6ª: Não podem ser palavras reservadas (palavras que o JS usa como comandos). Por exemplo: "function", "alert" e assim por diante.
 
-    /*Para fechar o NodeJS, uma das opções é digitar ".exit".*/
+    //Para fechar o NodeJS, uma das opções é digitar ".exit".
 
-    /*console.log('Ademir'): é o "document.write" do terminal (dentro do VSCode).*/
+    //console.log('Ademir'): é o "document.write" do terminal.
 
-    /*Dentro do VSCode, ao abrir o terminal, digite "node" para abrir e usar o NodeJS dentro do terminal do VSCode.*/
+    //Dentro do VSCode, ao abrir o terminal, digite "node" para abrir e usar o NodeJS dentro do terminal do VSCode.
 
-    /*Dentro do terminal, o comando ".exit" apenas fechará o NodeJS mas não o terminal do VSCode.*/
+    //Dentro do terminal, o comando ".exit" apenas fechará o NodeJS mas não o terminal do VSCode.
 
-    /*Para sair do terminal do VSCode, digite (dentro do terminal) "exit" ou clique no X para fechar a janela do terminal.*/
+    //Para sair do terminal do VSCode, digite (dentro do terminal) "exit" ou clique no X para fechar a janela do terminal.
 
-    /*O comando "control + l" limpa o terminal (do VSCode).*/
+    //O comando "control + l" limpa o terminal (do VSCode).
 
-    /*Tipos Primitivos (primordiais):*/
+    //Tipos Primitivos (primordiais):
 
-    /*5, 18, -12, 0.5, -15.9, 3.14, 8.0: Em JS, todos esses números são pertencentes ao tipo primitivo "number".*/
-    /*"Google", 'Javascript', `Maria`, "Oi1", 'Oi2', `Oi3`, "1", "2", `3`: tipo primitivo "string" (cadeia de caracteres).*/
-    /*true e false: tipo primitivo "boolean" ('booleano').*/
+    //5, 18, -12, 0.5, -15.9, 3.14, 8.0: Em JS, todos esses números são pertencentes ao tipo primitivo "number".
+    //"Google", 'Javascript', `Maria`, "Oi1", 'Oi2', `Oi3`, "1", "2", `3`: tipo primitivo "string" (cadeia de caracteres).
+    //"true" e "false": tipo primitivo "boolean" ('booleano').
 
-    /*Outros Tipos Primitivos (Data Types):*/
+    //Outros Tipos Primitivos (Data Types):
 
-    /*- Em "number": 'infinity', 'NaN';*/
-    /*- "Null" e "undefined";*/
-    /*- "Object" (Em JS, o "null" também podem ser considerado do tipo primitivo "object").*/
-    /*- Em "object": 'array' (vetor);*/
-    /*- "Function".*/
+    //- Em "number": 'infinity', 'NaN';
+    //- "Null" e "undefined";
+    //- "Object" (Em JS, o "null" também podem ser considerado do tipo primitivo "object").
+    //- Em "object": 'array' (vetor);
+    //- "Function".
 
-    /*O comando "typeof" nos diz o tipo primitivo de alguma linha de comando.*/
-    /*Seta para cima e para baixo (no NodeJS) volta os comandos.*/
+    //O comando "typeOf" nos diz o tipo primitivo de alguma linha de comando.*/
+    //Seta para cima e para baixo (no NodeJS) volta entre os comandos.
     
-    /*Em JS, qualquer coisa entre [] ou {} é um objeto.*/
-    /*Para reforçar: "NaN" e "infinity" são do tipo primitivo "number".*/
+    //Em JS, qualquer coisa entre [] ou {} é um objeto.
+    //Para reforçar: "NaN" e "infinity" são do tipo primitivo "number".
     
-    /*JS é uma linguagem orientada a objeto. JS também funciona com o "paradigma funcional".*/
+    //JS é uma linguagem orientada a Objeto; JS também funciona com o "paradigma funcional".
 
     </script>
 
