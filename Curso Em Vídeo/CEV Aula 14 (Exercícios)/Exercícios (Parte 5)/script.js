@@ -26,6 +26,7 @@ function contar() {
             for (let c = ini; c >= end; c -= pas) {
                 resultado.innerHTML += `${c} \u{1F449}` //Esses códigos de emojis, em JS, só funcionam entre crases.
             }
-        }   resultado.innerHTML += `\u{1F3C1}`
+            resultado.innerHTML += `\u{1F3C1}`
+        }
     }
 }
