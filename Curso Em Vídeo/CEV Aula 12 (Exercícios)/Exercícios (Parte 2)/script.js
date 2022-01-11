@@ -5,7 +5,7 @@ function carregar() {
     var hora = data.getHours()
     mensagem.innerHTML = `Agora são ${hora} horas `
     if (hora > 1 && hora <= 5) {
-        imagem.src = 'Imagens/madrugada_round_pp.jpg' /*Bom dia!*/
+        imagem.src = 'Imagens/madrugada_round_pp.jpg' //Bom dia!
         document.body.style.background = '#6f4c6d'
         mensagem.innerHTML += 'da madrugada.'
     }
@@ -20,12 +20,12 @@ function carregar() {
         document.body.style.background = '#6f4c6d'
     }
     else if (hora >= 12 && hora <= 18) {
-        imagem.src = 'Imagens/afternoon_round_pp.jpg' /*Boa Tarde!*/
+        imagem.src = 'Imagens/afternoon_round_pp.jpg' //Boa Tarde!
         document.body.style.background = '#ea761c'
         mensagem.innerHTML += 'da tarde.'
     }
     else {
-        imagem.src = 'Imagens/night_round_pp.jpg' /*Boa Noite!*/
+        imagem.src = 'Imagens/night_round_pp.jpg' //Boa Noite!
         document.body.style.background = '#6f4c6d'
         mensagem.innerHTML += 'da noite.'
     }
