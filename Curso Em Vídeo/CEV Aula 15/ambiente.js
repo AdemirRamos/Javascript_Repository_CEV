@@ -2,7 +2,8 @@ var num = [5, 2, 8, 9, 3] //Primeira maneira de se declarar uma variável compos
 num.push(1) //".push()" adiciona um valor ao vetor (sempre na última posição).
 num.sort() //".sort()" organiza os elementos do vetor. Se forem números, em ordem decrescente; se forem palavras, em ordem alfabética.
 num.length //".length" nos diz o tamanho do vetor, isso é, quantos elementos estão contidos no vetor analisado.
-/*Em JS, "length" não é um método, mas sim um atributo.*/
+//Em JS, "length" não é um método, mas sim um atributo.
+
 //Caso o método "sort" venha antes do método "push", primeiro o vertor será organizado, depois o valor de "push" será adicionado ao vetor.
 //O que resultará em um vetor com um elemento fora de ordem.
 
@@ -11,7 +12,7 @@ num.length //".length" nos diz o tamanho do vetor, isso é, quantos elementos es
 /*Conteúdo dos elementos: [0, 1, 2] -> elementos; [0, 1, 2] -> números (conteúdo / valor dos elementos).*/
 /*P. S.: As vírgulas definem e separam os elementos dentro de um vetor.*/
 /*Variáveis Compostas são variáveis com vários elementos. Cada elemento é composto por seu valor e uma chave de indentificação.*/
-/*Caso você seja escrito "console.log(num)", o resultado obtido será (sem "sort"): "[5, 2, 8, 9, 3, 1]".*/
+/*Caso seja escrito "console.log(num)", o resultado obtido será (sem "sort"): "[5, 2, 8, 9, 3, 1]".*/
 /*Para adicionar valores ao vetor, basta fazer isso: num[3] = 6. Resultado (sem "sort"): "[5, 2, 8, 6, 3, 1]".*/
 /*Para adicionar valores e aumentar o tamanho do vetor, basta fazer isso: num[6] = 9. Resultado (sem "sort"): "[5, 2, 8, 6, 3, 1, 9]".*/
 
